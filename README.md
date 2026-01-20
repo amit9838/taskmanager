@@ -103,7 +103,7 @@ ID  Status  Description                 Created
 Search Project
 ---
 ```shell
-taskmanager search project
+tm search project
 # Output: Found 1 results:
 # [ ] 2: Finish project report
 ```
@@ -129,16 +129,5 @@ We use a `Makefile` to simplify common tasks:
 * `make uninstall`: Removes the `tm` binary from your system path.
 
 * `go test -v ./internal/task` : Vourbose testing on a particular file.
-
-### Internal vs Pkg
-
-* **`internal/`**: Contains logic specific to this app (Storage/Task logic). Packages here cannot be imported by external projects.
-* **`pkg/`**: Contains helper logic (CLI/Display) that could theoretically be reused by other Go projects.
-
----
-
-## 📝 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ---
